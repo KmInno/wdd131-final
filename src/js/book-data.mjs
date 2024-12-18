@@ -12,8 +12,9 @@ function convertToJson(res) {
 export default class BookData {
   constructor(category) {
     this.category = category;
-    this.path = `../json/${this.category}.json`;
+    this.path = `/json/${this.category}.json`;
   }
+  
 
   // Fetch the list of books in the category
   async getData() {
