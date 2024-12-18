@@ -1,8 +1,7 @@
-import { loadHTML } from './utils.mjs';
+// Import the loadHeaderFooter function from utils.mjs
+import { loadHeaderFooter } from './utils.mjs'; 
 
-
-// Load the header and footer on all pages
+// Call the loadHeaderFooter function when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
-  loadHTML('../header.html', 'header');
-  loadHTML('../footer.html', 'footer');
+  loadHeaderFooter(); // This will dynamically load and insert the header and footer
 });
