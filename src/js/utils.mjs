@@ -57,11 +57,11 @@ export function renderWithTemplate(template, parentElement, data, callback) {
 // Function to render the header and footer dynamically
 export async function loadHeaderFooter() {
   // Load the header template from the partials directory
-  const headerTemplate = await loadTemplate('../partials/header.html');
+  const headerTemplate = await loadTemplate('/header.html');
   const headerElement = document.querySelector('#header');
 
   // Load the footer template from the partials directory
-  const footerTemplate = await loadTemplate('../partials/footer.html');
+  const footerTemplate = await loadTemplate('/footer.html');
   const footerElement = document.querySelector('#footer');
 
   // Render the header and footer into their respective elements
