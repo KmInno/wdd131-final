@@ -56,17 +56,19 @@ export function renderWithTemplate(template, parentElement, data, callback) {
 
 // Function to render the header and footer dynamically
 export async function loadHeaderFooter() {
-  // Load header template (updated path)
-  const headerTemplate = await loadTemplate('/header.html'); // Use root-based path
+  // Load the header template from the partials directory
+  const headerTemplate = await loadTemplate('../partials/header.html');
   const headerElement = document.querySelector('#header');
-  // Load footer template (updated path)
-  const footerTemplate = await loadTemplate('/footer.html'); // Use root-based path
+
+  // Load the footer template from the partials directory
+  const footerTemplate = await loadTemplate('../partials/footer.html');
   const footerElement = document.querySelector('#footer');
 
-  // Render the templates into the DOM
+  // Render the header and footer into their respective elements
   renderWithTemplate(headerTemplate, headerElement);
   renderWithTemplate(footerTemplate, footerElement);
 }
+
 
 // Retrieve data from localStorage
 export function getLocalStorage(key) {
