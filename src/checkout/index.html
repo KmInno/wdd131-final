@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep Outside | Checkout</title>
+    <link rel="stylesheet" href="../css/check.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script src="../js/checkout.js"></script>
+    <script src="../js/main.js"></script>
+
+  </head>
+
+  <body>
+    <header class="divider" id="main-header"></header>
+    <div id="header"></div>
+
+
+    <main class="divider">
+      <section class="products">
+        <h2>Review & Place your Order</h2>
+        <section class="checkout-form">
+          <form name="checkout_form">
+            <!-- Shipping Information -->
+            <fieldset>
+              <legend>Shipping</legend>
+              <div class="checkout-name">
+                <label for="fname">First Name</label>
+                <input id="fname" name="fname" type="text" required />
+                <label for="lname">Last Name</label>
+                <input id="lname" name="lname" type="text" required />
+              </div>
+            </fieldset>
+
+            <!-- Address Information -->
+            <fieldset>
+              <legend>Address</legend>
+              <label for="street">Street Address</label>
+              <input id="street" name="street" type="text" required />
+              <label for="city">City</label>
+              <input id="city" name="city" type="text" required />
+              <label for="state">State</label>
+              <input id="state" name="state" type="text" required />
+              <label for="zip">Zip Code</label>
+              <input id="zip" name="zip" type="text" pattern="[0-9]{5}" required title="Enter a 5-digit ZIP code" />
+            </fieldset>
+
+            <!-- Payment Information -->
+            <fieldset>
+              <legend>Payment</legend>
+              <label for="cardNumber">Credit Card Number</label>
+              <input id="cardNumber" name="cardNumber" type="text" pattern="[0-9]{16}" required title="Enter a 16-digit card number" />
+              <label for="expiration">Expiration Date</label>
+              <input id="expiration" name="expiration" type="text" pattern="\d{2}/\d{2}" placeholder="MM/YY" required title="Enter the expiration date in MM/YY format" />
+              <label for="code">Security Code</label>
+              <input id="code" name="code" type="text" pattern="[0-9]{3}" required title="Enter a 3-digit security code" />
+            </fieldset>
+
+            <!-- Order Summary -->
+            <fieldset class="checkout-summary">
+              <legend>Order Summary</legend>
+              <ul>
+                <li>
+                  <span>Item Subtotal (<span id="num-items"></span>):</span>
+                  <span id="cartTotal"></span>
+                </li>
+                <li>
+                  <span>Shipping Estimate:</span>
+                  <span id="Shipping"></span>
+                </li>
+                <li>
+                  <span>Tax:</span>
+                  <span id="tax"></span>
+                </li>
+                <li>
+                  <span>Order Total:</span>
+                  <span id="orderTotal"></span>
+                </li>
+              </ul>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button id="checkoutSubmit" type="submit">Checkout</button>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <footer id="main-footer"></footer>
+  </body>
+</html>

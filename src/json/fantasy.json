@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "title": "The Enchanted Forest",
+      "author": "Emily Rose",
+      "genre": "Fantasy",
+      "description": "A young girl stumbles upon a mystical forest where magic is real.",
+      "year": 2021,
+      "price": 13.99,
+      "cover": "https://example.com/covers/the-enchanted-forest.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Dragon's Lair",
+      "author": "David Green",
+      "genre": "Fantasy",
+      "description": "A knight embarks on a perilous journey to rescue a kidnapped princess from a dragon's lair.",
+      "year": 2020,
+      "price": 17.49,
+      "cover": "https://example.com/covers/dragons-lair.jpg"
+    },
+    {
+      "id": 3,
+      "title": "The Magic King",
+      "author": "Ava Turner",
+      "genre": "Fantasy",
+      "description": "A boy discovers his hidden magical abilities and must save the kingdom from a dark force.",
+      "year": 2022,
+      "price": 16.99,
+      "cover": "https://example.com/covers/the-magic-king.jpg"
+    },
+    {
+      "id": 4,
+      "title": "The Wizard's Apprentice",
+      "author": "Noah Gray",
+      "genre": "Fantasy",
+      "description": "An apprentice must master ancient spells to defeat a powerful evil sorcerer.",
+      "year": 2019,
+      "price": 14.49,
+      "cover": "https://example.com/covers/the-wizards-apprentice.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Kingdom of Shadows",
+      "author": "Lily Adams",
+      "genre": "Fantasy",
+      "description": "A princess must battle both her inner demons and the forces of darkness to reclaim her throne.",
+      "year": 2018,
+      "price": 19.99,
+      "cover": "https://example.com/covers/kingdom-of-shadows.jpg"
+    }
+  ]
+  

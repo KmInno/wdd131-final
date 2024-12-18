@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "title": "The Ultimate Warrior",
+      "author": "John Doe",
+      "genre": "Action",
+      "description": "A fast-paced story of a lone warrior on a mission to save the world from chaos.",
+      "year": 2021,
+      "price": 15.99,
+      "cover": "https://example.com/covers/the-ultimate-warrior.jpg"
+    },
+    {
+      "id": 2,
+      "title": "City of Shadows",
+      "author": "Jane Smith",
+      "genre": "Action",
+      "description": "A detective fights against the criminal underworld in a city where nothing is as it seems.",
+      "year": 2020,
+      "price": 12.99,
+      "cover": "https://example.com/covers/city-of-shadows.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Explosion Point",
+      "author": "Michael King",
+      "genre": "Action",
+      "description": "A former soldier is called back to action to prevent a global disaster.",
+      "year": 2019,
+      "price": 18.99,
+      "cover": "https://example.com/covers/explosion-point.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Revenge Code",
+      "author": "Sarah Lee",
+      "genre": "Action",
+      "description": "A hacker uncovers a secret government plot and must fight for survival.",
+      "year": 2022,
+      "price": 14.99,
+      "cover": "https://example.com/covers/revenge-code.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Warrior's Edge",
+      "author": "Chris Brown",
+      "genre": "Action",
+      "description": "An elite group of warriors must take on a ruthless mercenary army.",
+      "year": 2018,
+      "price": 20.00,
+      "cover": "https://example.com/covers/warriors-edge.jpg"
+    }
+  ]
+  

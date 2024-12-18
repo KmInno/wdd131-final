@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "title": "The Lost Island",
+      "author": "James Cooper",
+      "genre": "Adventure",
+      "description": "A treasure hunter embarks on an epic journey to uncover an ancient civilization's secrets.",
+      "year": 2021,
+      "price": 22.99,
+      "cover": "https://example.com/covers/the-lost-island.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Into the Unknown",
+      "author": "Sophia Miller",
+      "genre": "Adventure",
+      "description": "A group of explorers ventures into the uncharted wilderness, facing danger at every turn.",
+      "year": 2020,
+      "price": 18.49,
+      "cover": "https://example.com/covers/into-the-unknown.jpg"
+    },
+    {
+      "id": 3,
+      "title": "The Hidden Treasure",
+      "author": "Lucas Bennett",
+      "genre": "Adventure",
+      "description": "An adventurer races against time to find a hidden treasure that could change the world.",
+      "year": 2019,
+      "price": 25.00,
+      "cover": "https://example.com/covers/the-hidden-treasure.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Journey to the Center",
+      "author": "Olivia Clark",
+      "genre": "Adventure",
+      "description": "A team of scientists and explorers journey to the Earth's core to unlock its mysteries.",
+      "year": 2022,
+      "price": 21.99,
+      "cover": "https://example.com/covers/journey-to-the-center.jpg"
+    },
+    {
+      "id": 5,
+      "title": "The Jungle Expedition",
+      "author": "Ethan White",
+      "genre": "Adventure",
+      "description": "A daring expedition to the heart of the jungle uncovers ancient secrets and deadly creatures.",
+      "year": 2018,
+      "price": 20.00,
+      "cover": "https://example.com/covers/the-jungle-expedition.jpg"
+    }
+  ]
+  

@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "title": "Laugh Out Loud",
+      "author": "Tom Johnson",
+      "genre": "Comedy",
+      "description": "A collection of hilarious short stories that will make you laugh until you cry.",
+      "year": 2021,
+      "price": 9.99,
+      "cover": "https://example.com/covers/laugh-out-loud.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Jokes on the Go",
+      "author": "Rachel Williams",
+      "genre": "Comedy",
+      "description": "A comedian's humorous take on everyday life and the absurdities of the modern world.",
+      "year": 2020,
+      "price": 7.49,
+      "cover": "https://example.com/covers/jokes-on-the-go.jpg"
+    },
+    {
+      "id": 3,
+      "title": "The Funny Bone",
+      "author": "Chris Adams",
+      "genre": "Comedy",
+      "description": "A laugh-out-loud story about a man who discovers the secret to endless humor.",
+      "year": 2022,
+      "price": 8.99,
+      "cover": "https://example.com/covers/the-funny-bone.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Stand-Up Comedy",
+      "author": "Jenny Lee",
+      "genre": "Comedy",
+      "description": "A book about the journey of becoming a stand-up comedian, filled with humor and lessons.",
+      "year": 2019,
+      "price": 6.99,
+      "cover": "https://example.com/covers/stand-up-comedy.jpg"
+    },
+    {
+      "id": 5,
+      "title": "The Laughing Stock",
+      "author": "John Miller",
+      "genre": "Comedy",
+      "description": "A satirical novel that pokes fun at the ridiculousness of modern society.",
+      "year": 2018,
+      "price": 5.99,
+      "cover": "https://example.com/covers/the-laughing-stock.jpg"
+    }
+  ]
+  
