@@ -37,8 +37,8 @@ async function initBookDetailsPage() {
 
 // Function to load the header and footer
 function loadHeaderAndFooter() {
-  loadHTML('/public/header.html', 'header'); // Load the header HTML into the 'header' element
-  loadHTML('/public/footer.html', 'footer'); // Load the footer HTML into the 'footer' element
+  loadHTML('/header.html', 'header'); 
+  loadHTML('/footer.html', 'footer'); 
 }
 
 // Wait for the DOM to be fully loaded before running any scripts

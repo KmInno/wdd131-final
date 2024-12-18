@@ -30,8 +30,8 @@ function loadBooksFromCategory() {
 
 // Function to load the header and footer
 function loadHeaderAndFooter() {
-  loadHTML('/public/header.html', 'header');
-  loadHTML('/public/footer.html', 'footer');
+  loadHTML('/header.html', 'header');
+  loadHTML('/footer.html', 'footer');
 }
 
 // Wait for the DOM to be fully loaded before running any scripts
