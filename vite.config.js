@@ -4,7 +4,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   root: 'src/',
 
-  publicDir: 'src/public',  // Add this line
+  // publicDir: 'src/public',  // Add this line
 
   build: {
     outDir: '../dist', // Output folder for build
