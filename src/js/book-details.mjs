@@ -1,5 +1,5 @@
-import BookData from './book-data.mjs';
-import { getLocalStorage, setLocalStorage } from './utils.mjs';
+import BookData from "./book-data.mjs";
+import { getLocalStorage, setLocalStorage } from "./utils.mjs";
 
 // Function to get the query parameter from the URL
 function getParam(name) {
@@ -9,11 +9,11 @@ function getParam(name) {
 
 // Function to load book details
 async function loadBookDetails() {
-  const category = getParam('category');
-  const bookId = getParam('id');
-  
+  const category = getParam("category");
+  const bookId = getParam("id");
+
   if (!category || !bookId) {
-    console.error('Category or ID missing');
+    console.error("Category or ID missing");
     return;
   }
 
@@ -23,75 +23,68 @@ async function loadBookDetails() {
   try {
     // Fetch the book details using the ID
     const book = await bookData.findBookById(bookId);
-    
+
     if (book) {
       // Populate the book details on the page
       displayBookDetails(book);
     } else {
-      console.error('Book not found');
-      document.getElementById('book-details').innerHTML = '<p>Book not found</p>';
+      console.error("Book not found");
+      document.getElementById("book-details").innerHTML =
+        "<p>Book not found</p>";
     }
   } catch (error) {
-    console.error('Error loading book details:', error);
-    document.getElementById('book-details').innerHTML = '<p>Error loading book details</p>';
+    console.error("Error loading book details:", error);
+    document.getElementById("book-details").innerHTML =
+      "<p>Error loading book details</p>";
   }
 }
 
 // Function to display the book details in HTML
 // Function to display the book details
 export function displayBookDetails(book) {
-    const detailsElement = document.getElementById('book-details');
-    
-    // Use encodeURIComponent to safely encode the title and cover
-    const encodedTitle = encodeURIComponent(book.title);
-    const encodedCover = encodeURIComponent(book.cover);
-  
-    detailsElement.innerHTML = `
-      <div id="header"></div>
+  const detailsElement = document.getElementById("book-details");
 
-      <h2>${book.title}</h2>
-      <img src="${book.cover}" alt="${book.title}" class="book-image">
-      <p><strong>Author:</strong> ${book.author}</p>
-      <p><strong>Genre:</strong> ${book.genre}</p>
-      <p><strong>Year:</strong> ${book.year}</p>
-      <p><strong>Price:</strong> $${book.price}</p>
-      <p><strong>Description:</strong> ${book.description}</p>
-      <button class="add-to-cart-button" id="addToCart" data-id="${book.id}">Add to Cart</button>
+  // Use encodeURIComponent to safely encode the title and cover
+  const encodedTitle = encodeURIComponent(book.title);
+  const encodedCover = encodeURIComponent(book.cover);
 
-        <div id="footer"></div>
+  detailsElement.innerHTML = `
+    <h2 class="book-title">${book.title}</h2>
+    <div class="book-details-container">
+      <img src="${book.imgUrl}" alt="${book.title}" class="book-image">
+      <div class="book-details">
+        <p><strong>Author:</strong> ${book.authors}</p>
+        <p><strong>Year:</strong> ${book.year}</p>
+        <p><strong>Publisher:</strong> ${book.publisher}</p>
+        <p><strong>Description:</strong> ${book.description}</p>
+
+        <button class="add-to-cart-button" id="addToCart" data-id="${book.bookId}">Add Books</button>
+      </div>
+    </div>
 
     `;
-  
-    // Add event listener to the "Add to Cart" button
-    document
-      .getElementById('addToCart')
-      .addEventListener('click', () => addToCart(book));
-  }
-  
+
+  // Add event listener to the "Add to Cart" button
+  document
+    .getElementById("addToCart")
+    .addEventListener("click", () => addToCart(book));
+}
 
 // Call the function to load book details when the page loads
-document.addEventListener('DOMContentLoaded', loadBookDetails);
+document.addEventListener("DOMContentLoaded", loadBookDetails);
 
 function addToCart(book) {
-    let cartContents = getLocalStorage('book-cart'); // Get current cart contents
-  
-    if (!cartContents) {
-      cartContents = []; // If there's nothing in the cart, start with an empty array
-    }
-  
-    // Check if the book already exists in the cart by its ID
-    const existingBookIndex = cartContents.findIndex(item => item.id === book.id);
-  
-    if (existingBookIndex === -1) {
-      // If the book is not in the cart, add it
-      cartContents.push(book);
-      alert('Book added to cart!');
-    } else {
-      // If the book is already in the cart, you could increase the quantity, for instance:
-      alert('This book is already in the cart!');
-      // Or you can just leave it as it is and not add it again
-    }
-  
-    // Save the updated cart back to localStorage
-    setLocalStorage('book-cart', cartContents);
+  let cartContents = getLocalStorage("book-cart"); // Get current cart contents
+
+  if (!cartContents) {
+    cartContents = []; // If there's nothing in the cart, start with an empty array
+  }
+
+  // Add the book to the cart regardless of whether it's already there
+  cartContents.push(book); // Add the book to the cart
+
+  alert("Book added to Reading!");
+
+  // Save the updated cart back to localStorage
+  setLocalStorage("book-cart", cartContents);
 }

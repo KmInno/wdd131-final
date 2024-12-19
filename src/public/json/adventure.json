@@ -1,53 +1,132 @@
 [
-    {
-      "id": 1,
-      "title": "The Lost Island",
-      "author": "James Cooper",
-      "genre": "Adventure",
-      "description": "A treasure hunter embarks on an epic journey to uncover an ancient civilization's secrets.",
-      "year": 2021,
-      "price": 22.99,
-      "cover": "https://example.com/covers/the-lost-island.jpg"
-    },
-    {
-      "id": 2,
-      "title": "Into the Unknown",
-      "author": "Sophia Miller",
-      "genre": "Adventure",
-      "description": "A group of explorers ventures into the uncharted wilderness, facing danger at every turn.",
-      "year": 2020,
-      "price": 18.49,
-      "cover": "https://example.com/covers/into-the-unknown.jpg"
-    },
-    {
-      "id": 3,
-      "title": "The Hidden Treasure",
-      "author": "Lucas Bennett",
-      "genre": "Adventure",
-      "description": "An adventurer races against time to find a hidden treasure that could change the world.",
-      "year": 2019,
-      "price": 25.00,
-      "cover": "https://example.com/covers/the-hidden-treasure.jpg"
-    },
-    {
-      "id": 4,
-      "title": "Journey to the Center",
-      "author": "Olivia Clark",
-      "genre": "Adventure",
-      "description": "A team of scientists and explorers journey to the Earth's core to unlock its mysteries.",
-      "year": 2022,
-      "price": 21.99,
-      "cover": "https://example.com/covers/journey-to-the-center.jpg"
-    },
-    {
-      "id": 5,
-      "title": "The Jungle Expedition",
-      "author": "Ethan White",
-      "genre": "Adventure",
-      "description": "A daring expedition to the heart of the jungle uncovers ancient secrets and deadly creatures.",
-      "year": 2018,
-      "price": 20.00,
-      "cover": "https://example.com/covers/the-jungle-expedition.jpg"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "The Lost Island",
+    "author": "James Cooper",
+    "genre": "Adventure",
+    "description": "A treasure hunter embarks on an epic journey to uncover an ancient civilization's secrets.",
+    "year": 2021,
+    "price": 22.99,
+    "cover": "https://example.com/covers/the-lost-island.jpg",
+    "page_count": 350,
+    "language": "English",
+    "publisher": "Adventure Books Publishing"
+  },
+  {
+    "id": 2,
+    "title": "Into the Unknown",
+    "author": "Sophia Miller",
+    "genre": "Adventure",
+    "description": "A group of explorers ventures into the uncharted wilderness, facing danger at every turn.",
+    "year": 2020,
+    "price": 18.49,
+    "cover": "https://example.com/covers/into-the-unknown.jpg",
+    "page_count": 290,
+    "language": "English",
+    "publisher": "Explorer Press"
+  },
+  {
+    "id": 3,
+    "title": "The Hidden Treasure",
+    "author": "Lucas Bennett",
+    "genre": "Adventure",
+    "description": "An adventurer races against time to find a hidden treasure that could change the world.",
+    "year": 2019,
+    "price": 25.00,
+    "cover": "https://example.com/covers/the-hidden-treasure.jpg",
+    "page_count": 410,
+    "language": "English",
+    "publisher": "Treasure Seekers Publishing"
+  },
+  {
+    "id": 4,
+    "title": "Journey to the Center",
+    "author": "Olivia Clark",
+    "genre": "Adventure",
+    "description": "A team of scientists and explorers journey to the Earth's core to unlock its mysteries.",
+    "year": 2022,
+    "price": 21.99,
+    "cover": "https://example.com/covers/journey-to-the-center.jpg",
+    "page_count": 300,
+    "language": "English",
+    "publisher": "Core Exploration Press"
+  },
+  {
+    "id": 5,
+    "title": "The Jungle Expedition",
+    "author": "Ethan White",
+    "genre": "Adventure",
+    "description": "A daring expedition to the heart of the jungle uncovers ancient secrets and deadly creatures.",
+    "year": 2018,
+    "price": 20.00,
+    "cover": "https://example.com/covers/the-jungle-expedition.jpg",
+    "page_count": 380,
+    "language": "English",
+    "publisher": "Jungle Ventures"
+  },
+  {
+    "id": 6,
+    "title": "The Lost Island",
+    "author": "Sarah Johnson",
+    "genre": "Adventure",
+    "description": "A group of explorers embarks on a journey to find a legendary island lost to time.",
+    "year": 2021,
+    "price": 18.50,
+    "cover": "https://example.com/covers/lost-island.jpg",
+    "page_count": 330,
+    "language": "English",
+    "publisher": "Island Quest Publishing"
+  },
+  {
+    "id": 7,
+    "title": "Journey Beyond the Stars",
+    "author": "Daniel Scott",
+    "genre": "Adventure",
+    "description": "A daring astronaut discovers an uncharted planet filled with mystery and danger.",
+    "year": 2020,
+    "price": 20.00,
+    "cover": "https://example.com/covers/journey-beyond-stars.jpg",
+    "page_count": 360,
+    "language": "English",
+    "publisher": "Space Ventures"
+  },
+  {
+    "id": 8,
+    "title": "The Treasure Hunt",
+    "author": "Alice Green",
+    "genre": "Adventure",
+    "description": "A young woman goes on a thrilling treasure hunt, facing obstacles that test her wit and courage.",
+    "year": 2019,
+    "price": 17.00,
+    "cover": "https://example.com/covers/treasure-hunt.jpg",
+    "page_count": 280,
+    "language": "English",
+    "publisher": "Treasure Hunters Publishing"
+  },
+  {
+    "id": 9,
+    "title": "Mountains of Mystery",
+    "author": "Samuel Lee",
+    "genre": "Adventure",
+    "description": "A team of adventurers set out to conquer a treacherous mountain range that has claimed many lives.",
+    "year": 2022,
+    "price": 21.50,
+    "cover": "https://example.com/covers/mountains-mystery.jpg",
+    "page_count": 350,
+    "language": "English",
+    "publisher": "Mountain Quest Publishing"
+  },
+  {
+    "id": 10,
+    "title": "The Secret Map",
+    "author": "Jessica Wright",
+    "genre": "Adventure",
+    "description": "A cryptic map leads a group of explorers on a dangerous journey to uncover a hidden world.",
+    "year": 2023,
+    "price": 22.00,
+    "cover": "https://example.com/covers/secret-map.jpg",
+    "page_count": 400,
+    "language": "English",
+    "publisher": "Mystery Maps Publishing"
+  }
+]

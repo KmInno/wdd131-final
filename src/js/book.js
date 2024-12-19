@@ -1,6 +1,6 @@
 import BookData from './book-data.mjs'; // Assuming BookData is the data handler for fetching books
 import { displayBookDetails } from './book-details.mjs'; // Assuming this function handles displaying the book details
-// import { loadHTML } from './utils.mjs'; // Assuming loadHTML is the function to load HTML content dynamically
+import { loadHTML } from './utils.mjs'; // Assuming loadHTML is the function to load HTML content dynamically
 
 // Function to get the query parameters from the URL
 function getParam(name) {
@@ -37,8 +37,8 @@ async function initBookDetailsPage() {
 
 // Function to load the header and footer
 function loadHeaderAndFooter() {
-  loadHTML('/header.html', 'header'); 
-  loadHTML('/footer.html', 'footer'); 
+  loadHTML('/header.html', 'header');
+  loadHTML('/footer.html', 'footer');
 }
 
 // Wait for the DOM to be fully loaded before running any scripts

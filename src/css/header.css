@@ -1,0 +1,106 @@
+/* Navbar Styles */
+#header {
+    background-color: #0056b3; /* Slightly darker shade for better contrast */
+    color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  #header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  #header .logo {
+    font-size: 26px; /* Slightly larger font for prominence */
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+  
+  #header .logo:hover {
+    color: #0c0b0a; /* Add hover effect to the logo */
+  }
+  
+  #header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 15px; /* Use gap for modern spacing */
+  }
+  
+  #header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px; /* Add padding for better click area */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #header nav ul li a:hover {
+    color: #0056b3; /* Invert hover color for better visibility */
+    background-color: #ffbb33;
+  }
+  
+  #header nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  /* Mobile Responsive Navbar */
+  @media (max-width: 768px) {
+    #header nav {
+      flex-direction: column;
+      align-items: flex-start; /* Left align for cleaner look */
+      padding: 10px 20px;
+    }
+  
+    #header nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      gap: 10px; /* Adjust gap for better spacing on mobile */
+    }
+  
+    #header nav ul li a {
+      font-size: 18px;
+      width: 100%;
+      padding: 10px 20px; /* Ensure consistent padding */
+      display: block;
+      text-align: left; /* Align links to the left */
+    }
+  }
+  
+  /* Footer Styles */
+  #footer {
+    background-color: #222; /* Slightly darker for modern look */
+    color: #e0e0e0; /* Softer white for text */
+    padding: 30px 0;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  #footer p {
+    margin: 0;
+  }
+  
+  #footer a {
+    text-decoration: none;
+    color: #ffbb33;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  #footer a:hover {
+    color: #ffffff; /* Highlight hover with contrast */
+    text-decoration: underline;
+  }
+  
